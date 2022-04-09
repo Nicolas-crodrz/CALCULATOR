@@ -1,0 +1,61 @@
+
+/* Developed by: Nicolás Cabrera Rodríguez */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    align-items: center;
+    background:#091921;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+.calculator{
+  display: grid;
+  position: relative;
+}
+
+.calculator .value{
+      border: none;
+      font-size: 18px;
+      grid-column: span 4;
+      height: 100px;
+      outline: none;
+      padding: 10px;
+      text-align: right;
+    }
+
+.calculator span{
+    background: #0c2835;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #fff;
+    display: grid;
+    height: 60px;
+    place-items: center;
+    width: 60px;
+  }
+
+.calculator span:active{
+    background: #fff;
+    color: #111;
+  }
+
+.calculator span.clear{
+      background: #ff3077;
+      grid-column: span 2;
+      width: 120px;
+    }
+
+.calculator span.plus{
+      grid-row: span 2;
+      height: 120px;
+    }
+
+.calculator span.equal{
+      background: #03b1ff;
+    }
